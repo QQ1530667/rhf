@@ -24,13 +24,19 @@ $corpId = "wx5823bf96d3bd56c7";
 */
 
 // $sVerifyMsgSig = HttpUtils.ParseUrl("msg_signature");
-$sVerifyMsgSig = "5c45ff5e21c57e6ad56bac8758b79b1d9ac89fd3";
+// $sVerifyMsgSig = "5c45ff5e21c57e6ad56bac8758b79b1d9ac89fd3";
+$sVerifyMsgSig = $_GET['msg_signature'];
+
 // $sVerifyTimeStamp = HttpUtils.ParseUrl("timestamp");
-$sVerifyTimeStamp = "1409659589";
+// $sVerifyTimeStamp = "1409659589";
+$sVerifyTimeStamp = $_GET['timestamp'];
 // $sVerifyNonce = HttpUtils.ParseUrl("nonce");
-$sVerifyNonce = "263014780";
+// $sVerifyNonce = "263014780";
+$sVerifyNonce = $_GET['nonce'];
 // $sVerifyEchoStr = HttpUtils.ParseUrl("echostr");
-$sVerifyEchoStr = "P9nAzCzyDtyTWESHep1vC5X9xho/qYX3Zpb4yKa9SKld1DsH3Iyt3tP3zNdtp+4RPcs8TgAE7OaBO+FZXvnaqQ==";
+// $sVerifyEchoStr = "P9nAzCzyDtyTWESHep1vC5X9xho/qYX3Zpb4yKa9SKld1DsH3Iyt3tP3zNdtp+4RPcs8TgAE7OaBO+FZXvnaqQ==";
+$sVerifyEchoStr = $_GET['echostr'];
+
 
 // 需要返回的明文
 $sEchoStr = "";
